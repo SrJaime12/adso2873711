@@ -9,4 +9,5 @@
  ![Update](https://i.imgflip.com/6ffaji.jpg)
 
 
-|02-|Wheres the update? |click here to continue|![Steam] (https://pbs.twimg.com/media/EXqYpbnU0AE5wbQ.jpg:large)
+|02-|Wheres the update? |click here to continue|
+![Steam](https://pbs.twimg.com/media/EXqYpbnU0AE5wbQ.jpg:large)
