@@ -7,7 +7,7 @@ No silksong?
 
 
 
-01- Release Update when?| No update?
+01- Release Update when?, No Game?
 
 ![Update](https://i.imgflip.com/6ffaji.jpg)
 
