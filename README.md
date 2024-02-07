@@ -17,5 +17,6 @@ No silksong?
 
 |Want silksong?|
 |--||--|
-|1.yes||2.yes,but in another choise|
+|1.yes|
+|2.yes,but in another choise|
 
