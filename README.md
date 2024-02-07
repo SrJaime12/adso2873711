@@ -8,7 +8,8 @@ No silksong?
 
 
 01- Release Update when?| No update?
- ![Update](https://i.imgflip.com/6ffaji.jpg)
+
+![Update](https://i.imgflip.com/6ffaji.jpg)
 
 
 02-Wheres the update? Theres the new update!:
