@@ -10,7 +10,7 @@
  ![Update](https://i.imgflip.com/6ffaji.jpg)
 
 
-02-|Wheres the update? Theres the new update!:
+02-Wheres the update? Theres the new update!:
 ![Steam](https://pbs.twimg.com/media/EXqYpbnU0AE5wbQ.jpg:large)
 
 |Want silksong?|
