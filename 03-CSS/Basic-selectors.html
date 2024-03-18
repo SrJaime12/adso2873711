@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS FILE
+    <title>Basic Selectors
     </title>
     <link rel="stylesheet" href="CSS/master.css">
-    <style>
-     p.tittle {
-        background-color: rgb(11, 101, 236);
-        border-radius: 1rem 0 1rem 0;
-        color: white;
-        font-size: 4rem;
-        padding: 10px;
-        text-align: center;
+    ><style>
+        section#section01 p.rotate {
+            color: darkgreen;
+            font-size: 4rem;
+            text-align: center;
+            transform: rotate(-45deg);
+            padding: 1rem;
 
-     }
+        }
     </style>
+
 </head>
 <body>
     <nav class="controls">
@@ -26,13 +26,25 @@
     </nav>
     <main>
         <header>
-            <h1>01-Document Style</h1>
+            <h1>04-Basic Selectors</h1>
             <h2>
-           this way we can include CSS within the style tag, its very useful when you hace an html document
-            </h2>
+
+        </h2>
         </header>
-        <h3>Example:
+
+        <h2>        <ul>
+            <li>Universal (*)</li>
+            <li>Type/tag (p)</li>
+            <li>Descending (div p)</li>
+            <li>Class (.important)</li>
+            <li>ID (#cod389)</li>
+            <li>Merge (div#user3 p.title)</li>
+           </ul></h2>
+           <h3>Example:
         </h3>
-        <section>
-            <p class="tittle">ADSO 2873711</p>
-   <nav> 
+
+        <section id="section01">
+       <p class="rotate">SENA</p>
+        </section>
+            
+   <nav>
