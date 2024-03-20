@@ -3,36 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inheritance
-    </title>
-    <link rel="stylesheet" href="CSS/master.css">
+    <title>Percentage Units</title>
+    <link rel="stylesheet" href="css/master.css">
     <style>
-        section.section{
+        section.section {
             width: 80%;
         }
-      div.parent{ 
-        width: 380px;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-      }
-      div.parent.div {
-        font-size: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      div.child1{
+        div.parent {
+            display: flex;
+            height: 340px;
+            justify-content: center;
+            width: 100%;
+        }
+        div.parent div {
+            font-size: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         div.parent div.child1 {
-            background-color: gold;
+            background-color: rgb(55, 127, 194);
             width: 60%;
         }
-      }
-      div.child2{
-        background-color: dodgerblue;
-        width: 40%;
-      }
+        div.parent div.child2 {
+            background-color: rgb(255, 168, 39);
+            width: 40%;
+        }
     </style>
 </head>
 <body>
@@ -43,17 +39,15 @@
     </nav>
     <main>
         <header>
-            <h1>11-Percent units</h1>
-            <h2>
-           Specify a fixed length value. It doesn't
-            </h2>
+            <h1>Percentage Units</h1>
+            <h2>Are relative to the size of the parent element.</h2>
         </header>
-
-        <section>
-       <div class="parent">
-        <div div class="child1">60%</div>
-        <div class="child2">40%</div>
-
-       </div>
-        
-   <nav> 
+        <section class="section">
+           <div class="parent">
+                <div div class="child1">60%</div>
+                <div class="child2">40%</div>
+           </div>
+        </section>
+    </main>
+</body>
+</html>
