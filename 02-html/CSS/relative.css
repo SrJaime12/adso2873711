@@ -15,8 +15,8 @@ main {
     align-items: center;
     width: 80%;
     background-color: #fff;
-    padding: 20px;
-  header {
+    padding: 20px;}
+    header {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -51,4 +51,4 @@ main {
         text-align: justify;
     }
   }
-}
+

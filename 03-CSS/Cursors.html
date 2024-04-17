@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-     Template
+     Cursors
     </title>
     <link rel="stylesheet" href="CSS/master.css">
     <style>
-
+        section div{
+            background-color: aquamarine;
+            border: 2px solid #0009;
+            height: 100px;
+            margin-block: 0.6rem;
+            margin-inline: auto;
+            width: 280px;
+        }
+     div.cursor-move {cursor:move;}
+     div.cursor-help {cursor:help;}
+     div.cursor-crosshair {cursor:crosshair;}
+     div.cursor-image {cursor:url(Imagenes/hollow-knight-pure-vessel-pointer.png), pointer;}
     </style>
 </head>
 <body>
@@ -19,14 +30,16 @@
     </nav>
     <main>
         <header>
-            <h1>Relative Units</h1>
+            <h1>Cursors</h1>
+            <h2>Specifies the mouse cursor to be displayed when pointing over and element</h2>
             <section>
-        <ul>
-       <li>Normal/Static</li>
-       <li>Relative</li>
-       <li>Absolute</li>
-       <li>Fixed</li>
-       <li>Sticky</li>
-        </ul>
+        <h3>Move</h3>
+        <div class="cursor-move"></div>
+        <h3>Help</h3>
+        <div class="cursor-help"></div>
+        <h3>Crosshair</h3>
+        <div class="cursor-crosshair"></div>
+        <h3>Image (custom)</h3>
+        <div class="cursor-image"></div>
     </section>
         </header>
