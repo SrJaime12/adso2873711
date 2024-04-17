@@ -3,65 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-    </title>
-    <link rel="stylesheet" href="CSS/Sprite.CSS">
+    <title></title>
+    <link rel="stylesheet" href="">
     <style>
-        body {background-color: #17a053;}
-        div.sprite {
-            background: url(Imagenes/spriteweb\ \(1\).png)no-repeat;
-            margin: 0 auto;
-            background-position: -10px -400px;
-            height: 180px;
-            width: 190px;
-        }
-        main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 40px;
-}
 
-    header {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    width: 100%;
+    body {
+        background-color: #17A053;
+        font-family: sans-serif;
 
-    a:is( :link, :visited) {
-        background-color: #ccc;
-        contain-intrinsic-block-size: #333;
-        font-size: 1.2rem;
-        padding: 10px;
-        text-decoration: none;
+    nav {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        width: 100%;
+
+    a {
+        background-color: rgba(19, 87, 11, 0.6);
+        display: flex;
+        color: #000;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+        transition: all 0.5s ease-in;
+        width: 100px;
         text-align: center;
-        transition: all 0.4s ease-in;
-        width: -100px;
         justify-content: center;
+        text-decoration: none;
     }
-    a:is(:hover){
-        background-color: #333;
-        color: #ccc;
-        justify-content: center;
-    }
-  }
 
+    a:is(:hover)  {
+        transform: translateY(-5px);
+        background-color: rgb(2, 34, 2);
+        color: azure;
+        text-align: center;
+        justify-content: center; 
+    }
+    }
+
+    div.sprite-img {
+        background: url(Imagenes/spriteweb.png);
+        background-position: -10px -400px;
+        margin: 0 auto;
+        height: 180px;
+        width: 190px;
+        }
+    }
+
+    main {
+        border: 2px solid #000;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+
+    }
+
+
+    div.sprite1 {
+        background: url(Imagenes/spriteweb.png);
+        background-position: -500px -6px;
+        border: 3px solid #fff;
+        border-radius: 9px;
+        height: 200px;
+        width: 290px;
+        margin: 20px auto;
+    }
+    div.sprite2 {
+        background: url(Imagenes/spriteweb.png);
+        background-position: -500px -6px;
+        border: 3px solid #fff;
+        border-radius: 9px;
+        height: 200px;
+        width: 290px;
+        margin: 20px auto;
+    }
+    div.sprite3 {
+        background: url(Imagenes/spriteweb.png);
+        background-position: -500px -6px;
+        border: 3px solid #fff;
+        border-radius: 9px;
+        height: 200px;
+        width: 290px;
+        margin: 20px auto;
+    }
 
     </style>
+
 </head>
+<body>
+    <div class="sprite-img"></div>
+    <nav>
+        <a href="">INICIO</a>
+        <a href="">NOSOTROS</a>
+        <a href="">PORTAFOLIO</a>
+        <a href="">SERVICIOS</a>
+        <a href="">CONTACTO</a>
+    </nav>
     <main>
-        
-            <body>
-                <div class="sprite"></div>
-            </body>
-            <header>
-            <h1>
-                <a href="inicio">Inicio</a>
-                <a href="nosotros">Nosotros</a>
-                <a href="portafolio">Portafolio</a>
-                <a href="contacto">Contacto</a>
-            </h1>
-        </header>
+        <div class="sprite1"></div>
+        <div class="sprite2"></div>
+        <div class="sprite3"></div>
     </main>
+</body>
 </html>
