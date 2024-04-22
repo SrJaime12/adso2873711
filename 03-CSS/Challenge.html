@@ -3,88 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="">
+    <title>Document</title>
     <style>
-
-    body {
-        background-color: #17A053;
-        font-family: sans-serif;
-
-    nav {
-        display: flex;
-        gap: 1.5rem;
-        justify-content: center;
-        width: 100%;
-
-    a {
-        background-color: rgba(19, 87, 11, 0.6);
-        display: flex;
-        color: #000;
-        gap: 1rem;
-        align-items: center;
-        padding: 1rem;
-        transition: all 0.5s ease-in;
-        width: 100px;
-        text-align: center;
-        justify-content: center;
-        text-decoration: none;
-    }
-
-    a:is(:hover)  {
-        transform: translateY(-5px);
-        background-color: rgb(2, 34, 2);
-        color: azure;
-        text-align: center;
-        justify-content: center; 
-    }
-    }
-
-    div.sprite-img {
-        background: url(Imagenes/spriteweb.png);
-        background-position: -10px -400px;
-        margin: 0 auto;
-        height: 180px;
-        width: 190px;
+        html{
+            border: 7px solid white;
         }
-    }
-
-    main {
-        border: 2px solid #000;
-        display: flex;
-        gap: 1.5rem;
+             body{
+            background-color: #17A053;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        div.sprite{
+            background: url(Imagenes/spriteweb.png) no-repeat;
+            background-position: -10px -400px;
+            margin: 0 auto;
+            height: 180px;
+            width: 190px;
+        }
+        header{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            padding: 10px;
+        }
+        a.menu{
+            background-color: rgba(0, 0, 0, 0.473);
+            border-bottom: 4px solid white;
+            text-align: center;
+            width: 115px;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 1rem;
+            color: #fff;
+        }
+        a.menu:is(:hover){
+            background-color: rgba(128, 128, 128, 0.678);
+            border-bottom: 4px solid gold;
+        }
+        section#section1{
+            height: 230px;
+            width: 840px;
+            margin: 0 auto;
+    
+        }
+        div#nn{
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.473);
+        
+        }
+        div.img1{
+            border: 2px solid white;
+            background: url(Imagenes/spriteweb.png) no-repeat;
+            background-position: -512px -15px; 
+            height: 190px;
+            width: 250px;
+            justify-content:center;  
+            margin: 18px auto;
+        }
+        a.sp01{
+        font-size: 2rem;
+            width: 249.5px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.404);
+            text-align: center;
+            cursor: pointer;
         justify-content: center;
-        width: 100%;
-        margin-top: 20px;
-
-    }
-
-
-    div.sprite1, div.sprite2, div.sprite3 {
-        background: url(Imagenes/spriteweb.png);
-        background-position: -500px -6px;
-        border: 3px solid #fff;
-        border-radius: 9px;
-        height: 200px;
-        width: 290px;
+            display: flex;
+        }
+        a.sp01:is(:hover){
+        background-color: rgba(240, 248, 255, 0.815);
+        }
+        section#section2{
+            background-color: rgba(0, 0, 0, 0.473);
+        width: 840px;
         margin: 20px auto;
-    }
-    </style>
+        align-items: center;
+        justify-content: center;
+        }
+        div#dd1{
+        background-color: #fff;
+        height: 200px;
+        width: 820px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+    
+        }
+        section div#dd1 div#img2{
+        background: url(Imagenes/spriteweb.png) no-repeat center;
+        background-position: -280px -490px;
+        width: 200px;
+        height: 400px;  
+        }
+        p{
+            height: 199px;
+        width: 500px;
+        line-height: 1.6rem;
+        margin: 5px auto;
+        display: flex;
+        align-items: center;
+        font-size: 1.0rem;
+            cursor: pointer;
+        } 
+        div#img3{
+            background: url(Imagenes/spriteweb.png) no-repeat;
+            background-position: -30px -200px; 
+            width: 200px;
+            height: 190px; 
+            
+        }
+     
+        section#section3{
+        width: 840px;
+        margin: 20px auto;
+        background-color: #fff;
+        height: 240px;
+        }
+        div#sprite_{
+         
+            background: url(Imagenes/spriteweb.png) no-repeat;
+            background-position: -480px -438px; 
+            margin: 0 auto;
+            height: 180px;
+            width: 295px;
+        }
+        div#menu1{
+            gap: 5.2rem;
+            width: 200px;
+            display: flex;
+            margin-left: 3px;
+        }
+        a#menu2{
+            text-align: center;
+            width: 200px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        a#menu2:is(:hover){
+            border-bottom: 5px solid green;
+        }
 
+    </style>
 </head>
 <body>
-    <div class="sprite-img"></div>
-    <nav>
-        <a href="">INICIO</a>
-        <a href="">NOSOTROS</a>
-        <a href="">PORTAFOLIO</a>
-        <a href="">SERVICIOS</a>
-        <a href="">CONTACTO</a>
-    </nav>
-    <main>
-        <div class="sprite1"></div>
-        <div class="sprite2"></div>
-        <div class="sprite3"></div>
-    </main>
+  <main>
+    <div class="sprite"></div>
+    <br>
+    <header>
+        <a class="menu">INICIO</a>
+        <a class="menu">NOSOTROS</a>
+        <a class="menu">PORTAFOLIO</a>
+        <a class="menu">SERVICIOS</a>
+        <a class="menu">CONTACTO</a>
+    </header>
+    <br>
+    <section id="section1">
+        <div id="nn">
+            <div class="img1">
+                <a class="sp01">sss</a>
+            </div>
+            <div class="img1">
+                <a class="sp01">sss02</a>
+            </div>
+            <div class="img1">
+                <a class="sp01">sss03</a>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="section2">
+        <div id="dd1">
+            <div id="img2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt earum, blanditiis quae alias expedita at necessitatibus illo mollitia in quaerat nostrum corporis ea temporibus facilis perspiciatis molestias dolor. Laudantium id voluptatum magnam quo incidunt quidem saepe provident vel totam, aut, facere, unde enim architecto labore? Officiis maxime quibusdam consequatur magni illum esse unde harum </p>
+            <div id="img3"></div>
+        </div>
+        <div id="dd1">
+            <div id="img2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt earum, blanditiis quae alias expedita at necessitatibus illo mollitia in quaerat nostrum corporis ea temporibus facilis perspiciatis molestias dolor. Laudantium id voluptatum magnam quo incidunt quidem saepe provident vel totam, aut, facere, unde enim architecto labore? Officiis maxime quibusdam consequatur magni illum esse unde harum </p>
+            <div id="img3"></div>
+        </div>
+        <div id="dd1">
+            <div id="img2"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt earum, blanditiis quae alias expedita at necessitatibus illo mollitia in quaerat nostrum corporis ea temporibus facilis perspiciatis molestias dolor. Laudantium id voluptatum magnam quo incidunt quidem saepe provident vel totam, aut, facere, unde enim architecto labore? Officiis maxime quibusdam consequatur magni illum esse unde harum </p>
+            <div id="img3"></div>
+        </div>
+    </section>
+    <section id="section3">
+        <div id="sprite_"></div>
+       <div id="menu1">
+        <a id="menu2">INICIO</a>
+        <a id="menu2">NOSOTROS</a>
+        <a id="menu2">PORTAFOLIO</a>
+        <a id="menu2">SERVICIOS</a>
+        <a id="menu2">CONTACTO</a>
+       </div>
+    </section>
+  </main>  
 </body>
 </html>
