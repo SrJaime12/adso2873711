@@ -57,6 +57,56 @@
     div.chess div.f:nth-child(even) div.c:nth-child(2n) {
         background-color: #333;
     }
+    /*
+    target
+    */
+    div.target {
+        background-color: #fff9;
+        display: flex;
+        gap: -6rem;
+        margin-block: 1rem;
+        justify-content: space-between;
+        width: 200px;
+    }
+  
+    div.target div.menu-fruit {
+        display: flex;
+        gap: 1px;
+        flex-direction: column;
+
+    }
+    div.target div.menu-fruit a:is(:link,:visited){
+        background-color: #0009;
+        color: #fff9;
+        text-decoration: none;
+        padding: 10px;
+    }
+    div.emojis{
+        padding: 10px;
+        margin-top: 5px;
+    }
+    
+    div.emojis div.fruit {
+        display: none;
+        zoom: 4.5;
+    }
+    div.emojis div#apple:target,
+    div.emojis div#pear:target,
+    div.emojis div#orange:target {
+        display: flex;
+    }
+        /*
+    Selection
+    */
+    p.yellow::selection{
+        background-color: #ff0;
+    }
+    p.blue::selection{
+        background-color: #00f;
+    }
+    p.red::selection{
+        background-color: #f00;
+    }
     </style>
 </head>
 <body>
@@ -68,7 +118,7 @@
     <main>
         <header>
             <h1>New Selectors</h1>
-            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h2>Used to select the element(s) you want to style</h2>
             <section>
           <h3>:first-of-type|:last-of-type</h3>
            <ul>
@@ -161,18 +211,28 @@
                 <div class="c"></div>
             </div>
         </div>
-    <h3>target</h3>
+    <h3>:target</h3>
     <div class="target">
-        <div class="menu">
+        <div class="menu-fruit">
          <a href="#apple">Apple</a>
          <a href="#pear">Pear</a>
          <a href="#orange">Orange</a>
         </div>
-        <div class="emojis"></div>
-          <div class="fruit">🍎</div>
-          <div class="fruit">🍐</div>
-          <div class="fruit">🍊</div>
+        <div class="emojis">
+          <div id="apple" class="fruit">🍎</div>
+          <div id="pear" class="fruit">🍐</div>
+          <div id="orange" class="fruit">🍊</div>
+        </div>
     </div>
-
+    <h3>Selection</h3>
+    <p class="yellow">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti expedita a cum.
+    </p>
+    <p class="blue">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti expedita a cum.
+    </p>
+    <p class="red">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti expedita a cum.
+    </p>
     </section>
         </header>
