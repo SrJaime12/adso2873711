@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Animations
+    </title>
+    <link rel="stylesheet" href="CSS/master.css">
+    <style>
+        section{
+            width: 800px;
+            height: 450px;
+            top: auto;
+        }
+        div.sabaody{
+            background-image: url(Imagenes/bgonepiece.jpg);
+            width: 400px;
+            height: 415px;
+            background-position: 300% 200% no-repeat;
+        }
+        div.gomu{
+            position: relative;
+            top: 0;
+            left: 0;
+            animation: 4.1s animGomu infinite;
+        }
+        @keyframes animGomu{
+            0%{ left: 0px; transform: rotate(0deg);}
+            50%{left: 275px; transform: rotate(0deg)}
+            75%{top: 275px; transform: rotate(0deg);}
+            100% {left: 25px;  transform: rotate(0deg)}
+        }
+        div.luffy{
+            position: relative;
+            top: 0;
+            left: 0;
+            animation: 4.5s animLuffy infinite;
+        }
+        @keyframes animLuffy{
+            0%{ left: 0px; transform: rotate(0deg);}
+            1%{scale: 1%;}
+            50%{left: 250px; transform: rotate(0deg)}
+            65%{top: 45%; transform: rotateY(0deg);}
+            75%{top: 35%; transform: rotate(0deg);}
+            85%{left: 0px ; transform: rotateY(0deg);}
+            86%{scale: 100%;}
+            100% {left: 0px;  transform: rotate(0deg)}
+        }
+        </style>
+</head>
+<body>
+    <nav class="controls">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </a>
+    </nav>
+    <main>
+        <header>
+            <h1>Animations</h1>
+            <h2>Lets an element gradually change from one style to another</h2>
+    <section>
+        <h3>Example</h3>
+        <div class="sabaody">
+        <div class="gomu"> <img src="Imagenes/Gomu gomu.png" width="40px"></div>
+        <div class="luffy"><img src="Imagenes/luffy2.png" height="120px" width="120px"></div>
+        </div>
+    </section>
+        </header>
