@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpart" content="width=device-width">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+            *{
+                transition: all 0.2s ease-in;
+            }
+            div.logo{
+                background-color: #0009;
+                background: url(Imagenes/Jujutsu-Kaisen/Jujutsu_Kaisen_logo.png) no-repeat;
+                margin: 0 auto;
+                align-items: center;
+                display: flex;
+                width: 1500px;
+                height: 300px;
+                zoom: 75%
+            }
+            body {
+                background-color: #312f1d;
+                background-image: url(Imagenes/Jujutsu-Kaisen/background\ XD.png);
+                background-size: 2000px 1250px;
+                background-position: 50%;
+                color: #fffc;
+                font-family: Poppins , sans-serif;
+                font-weight: 400;
+            }       
+        header{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            padding: 10px;
+        }
+        a.menu1{
+            background: url(Imagenes/Jujutsu-Kaisen/Todo-Yuji.jpg);
+            border-bottom: 4px solid white;
+            background-position: -202px 0px;
+            text-align: center;
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 2rem;
+            color: #054b8b;
+        }
+        a.menu2{
+            background: url(Imagenes/Jujutsu-Kaisen/Todo-Yuji.jpg);
+            border-bottom: 4px solid white;
+            background-position: -575px -30px;
+            text-align: center;
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 2rem;
+            color: #bb0c37;
+        }
+        a.menu3{
+            background: url(Imagenes/Jujutsu-Kaisen/mahito-jujutsu.jpg)no-repeat;
+            border-bottom: 4px solid white;
+            background-position: -340px -100px;
+            text-align: center;
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 2rem;
+            color: #a810a1;
+        }
+        a.menu4{
+            background: url(Imagenes/Jujutsu-Kaisen/gojo.jpeg)no-repeat;
+            border-bottom: 4px solid white;
+            background-position: -400px -75px;
+            text-align: center;
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 2rem;
+            color: #3e2b44;
+        }
+        a.menu1:is(:hover){
+            background-color: rgba(128, 128, 128, 0.678);
+            border-bottom: 4px solid #1093c7;
+            transform:scale(1.2);
+        }
+        a.menu2:is(:hover){
+            background-color: rgba(128, 128, 128, 0.678);
+            border-bottom: 4px solid #c4133f;
+            transform:scale(1.2);
+        }
+        a.menu3:is(:hover){
+            background-color: rgba(128, 128, 128, 0.678);
+            border-bottom: 4px solid #9b09a8;
+            transform:scale(1.2);
+        }
+        a.menu4:is(:hover){
+            background-color: rgba(128, 128, 128, 0.678);
+            border-bottom: 4px solid #1d2423;
+            transform:scale(1.2);
+        }
+        section#section1{
+            background-color: #0009;
+            height: 620px;
+            width: 860px;
+            margin: 0 auto;
+    
+        }
+            main p {
+                line-height: 2rem;
+                text-align: justify;
+            }
+            main h1{ 
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            main h1 span.small,
+            main h1 span.medium{
+                display: none;
+            }
+            /*------------------*/
+            /*M E D I A Q U E R I ES*/
+            /*------------------*/
+            @media (max-width: 1024px){
+              div.logo{
+                background: url(Imagenes/Jujutsu-Kaisen/jujusu.png) no-repeat;
+                width: 650px;
+                height: 400px;
+              
+              }
+              main h1 span.small,
+              main h1 span.large{
+                display: none;
+              }
+              main h1 span.medium{
+                display: inline;
+              }
+              main h1{
+                font-size: 2.8rem;
+              }
+              a.menu1{
+                font-size: 2rem;
+              }
+            }
+            @media (max-width: 780px){
+              div.logo{
+                background: url(Imagenes/Jujutsu-Kaisen/jujusu.png) no-repeat;
+                background-size: 420px 300px;
+                
+              }
+              main h1 span.medium,
+              main h1 span.large{
+                display: none;
+                background-attachment: fixed;
+              }
+              main h1 span.small{
+                display: inline;
+                background-attachment: fixed;
+
+              }
+              main h1{
+                font-size: 2rem;
+                background-attachment: fixed;
+            
+              }
+              a.menu1,a.menu2,a.menu3,a.menu4{ 
+                font-size: 1.9rem;
+                back
+              }
+              section#section2{
+                font-size: 0.8rem;
+                background-attachment: fixed;
+              }
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="logo"></div>
+        <main>  
+            <section id="section1">
+                <header>
+              
+                    <a class="menu1">|Todou|</a>
+                    <a class="menu2">|Itadori|</a>
+                    <a class="menu3">|Mahito|</a>
+                    <a class="menu4">|Gojo|</a>
+                </header>
+                <section id="section2">
+                 <a class="menu">|Yuji|</a>
+                 <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non neque corporis voluptas corrupti eius ex porro cum similique! Deserunt amet vero delectus iste optio reiciendis! Tempora nulla doloremque quibusdam asperiores a tenetur dignissimos earum sunt corrupti. Itaque ut, voluptate eos ipsam totam porro in veritatis iste et rem culpa? Sunt?</p>
+                 <a class="menu">|Yuji and Todou|</a>
+                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in ducimus sed nam nobis aperiam sunt perferendis facere. Maxime numquam provident perferendis exercitationem labore officiis alias sapiente consequuntur, temporibus totam iste fuga, repellendus animi natus quia facere! Cum nulla deserunt magni, quo eligendi quos reprehenderit eos, dicta voluptatum ut exercitationem.</p>
+                </section>
+                </div>
+                </section id="section1">
+        </main>
+    </body>
+</html>
