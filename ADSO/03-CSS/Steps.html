@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-     Cursors
+     Steps
     </title>
     <link rel="stylesheet" href="CSS/master.css">
-    <style>
-        section div{
-            background-color: aquamarine;
-            border: 2px solid #0009;
-            height: 100px;
-            margin-block: 0.6rem;
-            margin-inline: auto;
-            width: 280px;
-        }
-     div.cursor-move {cursor:move;}
-     div.cursor-help {cursor:help;}
-     div.cursor-crosshair {cursor:crosshair;}
-     div.cursor-image {cursor:url(../Imagenes/hollow-knight-pure-vessel-pointer.png), pointer;}
+    <style> 
+    div.steps{
+        position: relative;
+        margin: 0 auto;
+        height: 280px;
+        width: calc(1024px/4);
+        animation: animSteps 0.6s steps(4) infinite;
+    }
+    div.steps01{
+        background: url(../Imagenes/steps/steps-01.png);
+    }
+    div.steps02 {
+        background: url(../Imagenes/steps/steps-02.png);
+    }
+    div.steps03 {
+        background: url(../Imagenes/steps/steps-03.png);
+    }
+    @keyframes animSteps {
+    100%{background-position: -1024px;}        
+    }
     </style>
 </head>
 <body>
@@ -30,16 +37,14 @@
     </nav>
     <main>
         <header>
-            <h1>Cursors</h1>
-            <h2>Specifies the mouse cursor to be displayed when pointing over and element</h2>
+            <h1>Steps</h1>
+            <h2>Allows us to break an animation or transition in Steps</h2>
             <section>
-        <h3>Move</h3>
-        <div class="cursor-move"></div>
-        <h3>Help</h3>
-        <div class="cursor-help"></div>
-        <h3>Crosshair</h3>
-        <div class="cursor-crosshair"></div>
-        <h3>Image (custom)</h3>
-        <div class="cursor-image"></div>
+        <h3>Example 01:</h3>
+        <div class="steps steps01"></div>
+        <h3>Example 02:</h3>
+        <div class="steps steps02"></div>
+        <h3>Example 03:</h3>
+        <div class="steps steps03"></div>
     </section>
         </header>
