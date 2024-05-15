@@ -13,13 +13,10 @@
             background-attachment: fixed;
             background-size: cover;
 
-            /* border: 3px #fff solid; */
+
             margin: 1px;
         }
-        
-        /****************Titulo logo Dragon Ball***********************/
         header div.title-dragonball {
-            /* border: red solid 2px; */
             margin: 20px auto;
             background: url(Imagenes/Jujutsu-Kaisen/jujusu.png) no-repeat center;
             height: 400px;
@@ -32,18 +29,18 @@
             /* border: 2px solid red; */
             margin: 30px auto;
             width: 1200px;  
-            display: flex;                       /* Centramos los contenidos display: flex; y justify-content: center; Es con el padre*/
-            justify-content: center;             /* Este es importantisimo se centra con el padre los hijos enlaces */
+            display: flex;                       
+            justify-content: center;             
             background-color: #0006;
         }
-            section div.box1 {                       /*Esta es la caja de cada personaje*/
+            section div.box1 {                       
                 /* border: 2px solid red; */
                 margin: 10px auto;
                 height: 280px;
                 width: 280px;
-                position: relative;                 /*Relative para que tome de referencia a este  padre de las cajas de las imagenes*/
+                position: relative;                
             }
-            section div.goku {                      /* Se independiza con diferentes clases por si se quiere poner diferentes imagenes el p.title-character*/
+            section div.goku {                     
                 background: url(Imagenes/Jujutsu-Kaisen/Todo-Yuji.jpg) no-repeat center;
                 background-size: 280px 280px;
             }
@@ -62,7 +59,7 @@
                 section div p.title-character {
                    /* border: black 2px solid; */
                    text-align: center;
-                   position: absolute;            /*Tomamos de referencia al padre section div.box1 con relative, de las cajas de las imagenes para ubicar bien el  texto*/
+                   position: absolute;          
                    height: 60px;
                    width: 100%;
                    bottom: -16px;           
@@ -70,7 +67,7 @@
                    color: #fffb;
                    
                    font-weight: 500;
-                   transition: all 0.4s ease-in;     /*Para darle la transicion es con el padre*/
+                   transition: all 0.4s ease-in; 
                 }
                 section div p.title-character:is(:hover) {
                     height: 120px;
@@ -78,22 +75,21 @@
                     background-color: #000e;  
                 } 
 
-        /****************Seccion Personajes y Historia***********************/
         section.sections-goku-vegueta {
-            /* border: red solid 2px; */
+
             margin: 10px auto;
             width: 1200px;
             height: 735px;
             background-color: rgba(255, 255, 255, 0.555);
         }
-            div.box2-history {          /*Los dos hijos*/
-                /* border: 2px red solid; */
+            div.box2-history {       
+
                 margin: 25px;
                 gap: 2rem;
-                position: relative;         /*Para terminarle de darle margen a la caja y top 15px*/    
+                position: relative;        
                 top: 15px;             
-                display: flex;              /* Centramos los contenidos display: flex; y justify-content: center; Es con el padre*/
-                justify-content: center;   /* Este es importantisimo se centra con el padre los hijos enlaces */
+                display: flex;            
+                justify-content: center;   
                 background-color: rgba(15, 15, 15, 0.333);
             }
                 section div.box-goku-dbs {
@@ -113,13 +109,11 @@
                     background-size: 320px 320px;
                 }
                 section div.box-text-dbs {
-                    /* border: 2px red solid; */
                     margin: 10px;
                     width: 600px;
                     height: 320px;
                 }
                     h4 {
-                        /* border: red solid 2px; */
                         margin: 5px;
                         font-size: 1.6rem;
                         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
