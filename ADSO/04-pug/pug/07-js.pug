@@ -1,0 +1,23 @@
+doctype 
+html(lang="en")
+    head 
+        meta(charset=UTF-8)
+        title Literal Attributes  
+        link(rel="stylesheet", href="../css/master.css")
+
+        nav.controls
+            a(href="../index.html") 
+    main 
+        header 
+            h1 Literal Attributes 
+        section 
+            h2.msj 
+script. 
+    let msg=document.querySelector('.msj')
+    let name=prompt('Whats your Name?')
+    if (name=='jaime'){
+        msg.textContent='Welcome dude: '+name }
+        else{
+            msg.textContent='Welcome: '+name 
+        }
+
