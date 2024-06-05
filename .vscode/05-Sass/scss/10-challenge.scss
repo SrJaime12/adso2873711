@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.frame{
+    position: relative;
+    width: 20em;
+    height: 25em;
+    border: 1px solid red;
+}
+.egg{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 3.2/4;
+    border-radius: 100%/130% 130% 70% 70%;
+    background-color: white;
+
+}

@@ -7,9 +7,41 @@
      Challenge
     </title>
     <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/01-nest.css">
     <style>
-
+.frame{
+    position: relative;
+    width: 20em;
+    height: 25em;
+}
+.egg{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 3.2/4;
+    border-radius: 100%/130% 130% 70% 70%;
+    background-color: white;
+}
+div.O{
+    position: absolute;
+    width: 30%;
+    height: 36%;
+    background: green;
+    border-radius: 100%;
+    transform: translate(23%,50%)rotate(20deg);
+}
+div.Otwo{
+    position: absolute;
+    width: 30%;
+    height: 36%;
+    background: green;
+    border-radius: 100% / 100% 110% 90% 90%;
+    transform: translate(215%,115%)rotate(-5deg);
+}
+div.Othre{
+    width: 46%;
+    height: 30%;
+    transform: translate(35%, 235%)rotate(15deg);
+}
     </style>
 </head>
 <body>
@@ -20,9 +52,15 @@
     </nav>
     <main>
         <header>
-            <h1>NEST RULES (SASS)</h1>
-            <section class="content">
-            <h2>ADSO</h2>
+            <h1>Challenge</h1>
+            <section>
+                <div class="frame">
+                    <div class="egg">  
+                        <div class="O"></div>
+                        <div class="Otwo"></div>
+                        <div class="Othre"></div>
+                    </div>
+                </div>
             </section>
         </header>
     </main>
