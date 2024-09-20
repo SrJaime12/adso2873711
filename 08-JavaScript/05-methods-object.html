@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>05-Mths Object</title>
+    <title>05 Methods Object</title>
     <link rel="stylesheet" href="css/master.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        main section h3{
+        main section h3 {
             margin-inline: auto;
         }
-        main section h4{
+        main section h4 {
             text-align: center;
             font-size: 3.2rem;
             margin: 0;
             padding: 0;
+
         }
-        main section figure{
+        main section figure {
             padding: 0;
             display: flex;
+            justify-content: center;
+            margin: 0;
         }
-    </style>  
+        main section figure img {
+            /* border: 2px solid blue;
+            object-fit: contain; */
+            width: 180px;
+        }
+
+    </style>
+    
 </head>
 <body>
     <nav class="controls">
@@ -29,53 +40,54 @@
     </nav>
     <main>
         <header>
-            <h1>05-Mths Object</h1>
-            <h2>Description</h2>
+            <h1>05- Methods Object</h1>
+            <h2>Desctp</h2>
         </header>
-         <section>
-            <h3 class="pkName">Gogoat</h3>
+        <section>
+            <h3 class="pkName"></h3>
             <h4 class="pkHp"></h4>
             <figure>
                 <img src="" class="pkImage">
             </figure>
-            <ol class="okMoves"></ol>
-            </section>
-         </section>
-    </main>
+            <ol class="pkMoves"></ol>
+        </section>
+    </main>  
     <script>
-        //Elements
-        const pkName = document.querySelector('.pkName')
-        const pkHp = document.querySelector('.pkHp')
+        // Element
+        const pkName  = document.querySelector('.pkName')
+        const pkHp    = document.querySelector('.pkHp')
         const pkImage = document.querySelector('.pkImage')
         const pkMoves = document.querySelector('.pkMoves')
-        //Object
+
+        //object
         const pokemon = {
-            //Attributes
-            name: 'Gogoat',
-            type: 'Plant',
+            // Attributes
+            name: 'Snorlax',
+            type: 'Normal',
             hp: 100,
-            image:'https://tinyurl.com/57wpjuyd',
-            attack: function(){
-                if(this.hp <= 0){
-                    clearInterval(setInterval)
-                    return 'Has been defeated!'
-                }else {
+            image: 'https://images.gameinfo.io/pokemon/256/p143f157s1.png',
+            attack: function() {
+                if(this.hp < 0) {
+                    clearInterval(sInterval)
+                    return 'K.O!'
+                } else {
                     this.hp -= 10
                     return this.hp
                 }
-            }
-            feed: function(){
-                this.hp += 10
+            },
+            feed: function() {
+                this.hp += 5
             }
         }
-        //render
-        pkName.textContent = `${pokemon.name}(${pokemon.type})`
-        pkImage.src = pokemon.image
-        pkHp.textContent=pokemon.hp
-        const sInterval = setInterval(())->{
-            pokemon attack()
-            pkHp.textContent = pokemon.hp
-        },2000)
-    </script>  
+        // Render
+        pkName.innerHTML = `${pokemon.name} <small>(${pokemon.type})</small>`
+        pkHp.textContent = pokemon.hp
+        pkImage.src      = pokemon.image
+        const sInterval = setInterval(() => {
+            pkHp.textContent = pokemon.attack()  
+            //pokemon.feed()
+        }, 1200)
+        
+    </script>
 </body>
 </html>
